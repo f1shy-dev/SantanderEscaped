@@ -31,7 +31,7 @@ jobs:
           packages: ldid
           cache: true
           cache-path: ~/__cache
-#          mirror: 'https://repo.quiprr.dev/procursus/'
+          mirror: 'https://apt.procurs.us/bootstraps/big_sur/'
           
       - name: Select Xcode version (14.0)
         run: |
