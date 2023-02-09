@@ -25,14 +25,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         
-      - name: Set up Procursus
-        uses: beerpiss/procursus-action@v2
-        with:
-          packages: ldid
-          cache: true
-          cache-path: ~/__cache
+#      - name: Set up Procursus
+ #       uses: beerpiss/procursus-action@v2
+  #      with:
+   #       packages: ldid
+    #      cache: true
+     #     cache-path: ~/__cache
           #          mirror: 'https://f1sh.me/dl/procursus'
-          
+     
+      - name: LDID install
+        run: |
+          brew install ldid
+     
       - name: Select Xcode version (14.0)
         run: |
           sudo xcode-select --switch /Applications/Xcode_14.0.app
