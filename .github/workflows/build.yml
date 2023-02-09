@@ -26,12 +26,12 @@ jobs:
         uses: actions/checkout@v3
         
       - name: Set up Procursus
-        uses: beerpiss/procursus-action@v1
+        uses: beerpiss/procursus-action@v2
         with:
           packages: ldid
           cache: true
           cache-path: ~/__cache
-          mirror: 'https://f1sh.me/dl/procursus'
+          #          mirror: 'https://f1sh.me/dl/procursus'
           
       - name: Select Xcode version (14.0)
         run: |
